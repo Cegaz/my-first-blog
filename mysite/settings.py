@@ -25,7 +25,7 @@ SECRET_KEY = '&dbm3w!g)xt&z*5wj+928=&cai!24m^qjgmt_3=$h95*8=(v$0'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['cegaz.pythonanywhere.com']
 
 
 # Application definition
