@@ -7,16 +7,12 @@
     <h1>Mon super blog</h1>
     <p>Hello world!</p>
 
-    <div>
-      <h2>Mon premier post</h2>
-      <p>blablabalalbala<br/>
-      blablabklbalalba</p>
-    </div>
-
-    <div>
-      <h2>Mon deuxieme post</h2>
-      <p>youofsufoidqsfoqsdfiu<br/>
-      youoruouousouou</p>
-    </div>
+    {% for post in posts %}
+      <div>
+        <p>publié: {{post.published_date}}</p>
+        <h1><a ref="">{{post.title}}</a></h1>
+        <p>{{post.text|linebreaksbr}}</p>
+      </div>
+    {% endfor %}
   </body>
  </html>
